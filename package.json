@@ -10,6 +10,10 @@
     "parcel-bundler": "^1.2.0"
   },
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel ./src/index.html --port 4000",
+    "build": "parcel build ./src/index.html --public-url /wicked-tec1/",
+    "lint": "eslint src/**/*.ts* --fix",
+    "test": "npm run lint && jest --coverage",
+    "test-dev": "jest"
   }
 }

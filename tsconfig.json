@@ -1,0 +1,23 @@
+{
+  "include": ["./src/**/*", "assets"],
+
+  "compilerOptions": {
+    "target": "ES6",
+    "esModuleInterop": true,
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2018",
+      "es2020",
+      "esnext",
+      "esnext.asynciterable"
+    ],
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true
+  },
+  "files": ["custom.d.ts"]
+}
